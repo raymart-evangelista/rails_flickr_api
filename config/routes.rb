@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root "static_pages#home"
+
+  # match 'static_pages/home/' => 'static_pages#home', :via => :get
+  get 'static_pages/home', to: 'static_pages#home'
 end

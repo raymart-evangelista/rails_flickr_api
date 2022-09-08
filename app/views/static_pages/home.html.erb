@@ -1,0 +1,13 @@
+<h1>This is the home page</h1>
+
+<%= form_with url: static_pages_home_path, method: :get do |form| %>
+  <%= form.label :flickr_id, "Flickr id" %>
+  <%= form.text_field :flickr_id %>
+  <%= form.submit %>
+<% end %>
+
+<% if @links %>
+  <% @links.each do |photo| %>
+    <%= image_tag "#{photo}" %>
+  <% end %>
+<% end %>
