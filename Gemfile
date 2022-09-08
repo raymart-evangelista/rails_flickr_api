@@ -7,6 +7,7 @@ gem "sprockets-rails"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem 'flickr', '~> 2.1'
+gem 'figaro', '~> 1.2'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
